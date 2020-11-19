@@ -3,7 +3,7 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 <title>ITF Lab</title>
 </head>
-<body class="container text-center" style="height: 100vh; background: url(https://www.arsenal.com/sites/default/files/styles/desktop_16x9/public/images/GettyImages-1282918188%20Cropped.jpg?itok=pBbpaGUY&auto=format&fit=crop&w=967&q=100);background-repeat: no-repeat;background-size: cover;">
+<body class="container text-center" style="height: 100vh; background: url(https://images.unsplash.com/photo-1577224682866-a1834ca126ae?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=100);background-repeat: no-repeat;background-size: cover;">
 <?php
 $conn = mysqli_init();
 mysqli_real_connect($conn, 'upoex125.mysql.database.azure.com', 'upoex@upoex125', '123456789Za', 'itflab', 3306);
@@ -33,8 +33,8 @@ while($Result = mysqli_fetch_array($res))
     <td><?php echo $Result['Comment'];?></td>
     <td><?php echo $Result['Link'];?></td>
     <td>
-        <input class="btn btn-warning" type="button" value="แก้ไข" onclick="window.location.href='upoex125.mysql.database.azure.com/edit.php?name=<?php echo $Result['Name'];?>&comment=<?php echo $Result['Comment'];?>&link=<?php echo $Result['Link'];?>&id=<?php echo $Result['ID'];?>'" /> 
-        <input class="btn btn-danger" type="button" value="ลบ" onclick="window.location.href='upoex125.mysql.database.azure.com/delete.php?rn=<?php echo $Result['ID'];?>'" />
+        <input class="btn btn-warning" type="button" value="แก้ไข" onclick="window.location.href='https://punch-mysql.azurewebsites.net/edit.php?name=<?php echo $Result['Name'];?>&comment=<?php echo $Result['Comment'];?>&link=<?php echo $Result['Link'];?>&id=<?php echo $Result['ID'];?>'" /> 
+        <input class="btn btn-danger" type="button" value="ลบ" onclick="window.location.href='https://punch-mysql.azurewebsites.net/delete.php?rn=<?php echo $Result['ID'];?>'" />
     </td>
   </tr>
 <?php
@@ -46,7 +46,7 @@ while($Result = mysqli_fetch_array($res))
 mysqli_close($conn);
 ?>
 <form>
-    <input class="btn btn-success" type="button" value="เพิ่ม" onclick="window.location.href='upoex125.mysql.database.azure.com/form.html'" />
+    <input class="btn btn-success" type="button" value="เพิ่ม" onclick="window.location.href='https://punch-mysql.azurewebsites.net/form.html'" />
 </form>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>

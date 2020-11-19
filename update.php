@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body class="container text-center" style="height: 100vh; background: url(https://www.arsenal.com/sites/default/files/styles/desktop_16x9/public/images/GettyImages-1282918188%20Cropped.jpg?itok=pBbpaGUY&auto=format&fit=crop&w=967&q=100);background-repeat: no-repeat;background-size: cover;">
+<body class="container text-center" style="height: 100vh; background: url(https://images.unsplash.com/photo-1577224682866-a1834ca126ae?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=100);background-repeat: no-repeat;background-size: cover;">
     <div class="roundred p-3 shadow bg-light">
 <?php
 
@@ -35,7 +35,7 @@ if (mysqli_query($conn, $sql)) {
 mysqli_close($conn);
 ?>
 <div class="my-5">
-<input class="btn btn-success" type="button" value="กลับหน้าหลัก" onclick="window.location.href='upoex125.mysql.database.azure.com/show.php'" />
+<input class="btn btn-success" type="button" value="กลับหน้าหลัก" onclick="window.location.href='https://punch-mysql.azurewebsites.net/show.php'" />
 </div>
 </div>
 </div>
