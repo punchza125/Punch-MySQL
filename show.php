@@ -6,7 +6,7 @@
 <body class="container text-center" style="height: 100vh; background: url(https://www.arsenal.com/sites/default/files/styles/desktop_16x9/public/images/GettyImages-1282918188%20Cropped.jpg?itok=pBbpaGUY&auto=format&fit=crop&w=967&q=100);background-repeat: no-repeat;background-size: cover;">
 <?php
 $conn = mysqli_init();
-mysqli_real_connect($conn, 'upoex125.mysql.database.azure.com', 'upoex@upoex125', '123456789', 'itflab', 3306);
+mysqli_real_connect($conn, 'upoex125.mysql.database.azure.com', 'upoex@upoex125', '123456789Za', 'itflab', 3306);
 if (mysqli_connect_errno($conn))
 {
     die('Failed to connect to MySQL: '.mysqli_connect_error());
